@@ -1,0 +1,744 @@
+/*=========================================
+  GOOGLE FONT
+=========================================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*=========================================
+  RESET
+=========================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#f5f7fb;
+
+    color:#333;
+
+    line-height:1.8;
+
+}
+
+img{
+
+    max-width:100%;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+/*=========================================
+  NAVIGATION
+=========================================*/
+
+nav{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+    padding:18px;
+
+    background:#ffffff;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+
+}
+
+nav a{
+
+    color:#333;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+nav a span{
+
+    padding:8px 15px;
+
+    border-radius:8px;
+
+}
+
+nav a:hover span{
+
+    background:#2563eb;
+
+    color:#fff;
+
+}
+
+/*=========================================
+  HEADER
+=========================================*/
+
+header{
+
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+
+    color:white;
+
+    text-align:center;
+
+    padding:90px 20px;
+
+}
+
+header h1{
+
+    font-size:55px;
+
+    font-weight:700;
+
+}
+
+header p{
+
+    margin-top:15px;
+
+    font-size:22px;
+
+    color:#dbeafe;
+
+}
+
+/*=========================================
+  SECTION
+=========================================*/
+
+section{
+
+    max-width:1100px;
+
+    margin:auto;
+
+    padding:70px 20px;
+
+}
+
+/*=========================================
+  SECTION TITLE
+=========================================*/
+
+h2{
+
+    color:#2563eb;
+
+    margin-bottom:25px;
+
+    font-size:34px;
+
+    position:relative;
+
+}
+
+h2::after{
+
+    content:"";
+
+    width:80px;
+
+    height:4px;
+
+    background:#2563eb;
+
+    display:block;
+
+    margin-top:8px;
+
+}
+
+/*=========================================
+  ABOUT
+=========================================*/
+
+#about p{
+
+    margin-bottom:20px;
+
+    text-align:justify;
+
+    color:#555;
+
+}
+
+/*=========================================
+  SKILLS
+=========================================*/
+
+#skills h3{
+
+    margin-top:35px;
+
+    color:#1d4ed8;
+
+}
+
+.skills{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-top:15px;
+
+}
+
+.skills span{
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:10px 18px;
+
+    border-radius:30px;
+
+    transition:.3s;
+
+}
+
+.skills span:hover{
+
+    background:#1d4ed8;
+
+    transform:translateY(-5px);
+
+}
+
+/*=========================================
+  PROJECTS
+=========================================*/
+
+.project{
+
+    background:#ffffff;
+
+    margin-top:25px;
+
+    padding:25px;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.project:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 10px 25px rgba(37,99,235,.15);
+
+}
+
+.project h3{
+
+    color:#2563eb;
+
+    margin-bottom:15px;
+
+    font-size:24px;
+
+}
+
+.project p{
+
+    color:#555;
+
+    line-height:1.8;
+
+}
+
+/*=========================================
+  EDUCATION
+=========================================*/
+
+#education ul{
+
+    padding-left:0;
+
+}
+
+#education li{
+
+    background:#ffffff;
+
+    padding:20px;
+
+    margin-bottom:20px;
+
+    border-left:5px solid #2563eb;
+
+    border-radius:10px;
+
+    box-shadow:0 4px 10px rgba(0,0,0,.08);
+
+}
+
+#education img{
+
+    width:30px;
+
+    height:30px;
+
+    vertical-align:middle;
+
+    margin-right:10px;
+
+    border-radius:50%;
+
+}
+
+/*=========================================
+  CERTIFICATIONS
+=========================================*/
+
+#certifications ul{
+
+    padding-left:0;
+
+}
+
+#certifications li{
+
+    background:#ffffff;
+
+    margin-bottom:15px;
+
+    padding:18px 20px;
+
+    border-left:5px solid #2563eb;
+
+    border-radius:10px;
+
+    box-shadow:0 4px 10px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+#certifications li:hover{
+
+    transform:translateX(8px);
+
+    border-left-color:#1d4ed8;
+
+}
+
+/*=========================================
+  ACHIEVEMENTS
+=========================================*/
+
+#achievements .project{
+
+    border-left:5px solid #22c55e;
+
+}
+
+#achievements ul{
+
+    padding-left:20px;
+
+}
+
+#achievements li{
+
+    margin-bottom:12px;
+
+    color:#555;
+
+    line-height:1.8;
+
+}
+
+/*=========================================
+  CONTACT
+=========================================*/
+
+.contact{
+
+    background:#ffffff;
+
+    padding:30px;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.contact p{
+
+    margin-bottom:18px;
+
+    font-size:17px;
+
+}
+
+.contact a{
+
+    color:#2563eb;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.contact a:hover{
+
+    color:#1d4ed8;
+
+    text-decoration:underline;
+
+}
+
+.contact i{
+
+    font-size:22px;
+
+    margin-right:10px;
+
+    color:#2563eb;
+
+}
+
+/*=========================================
+  RESUME BUTTON
+=========================================*/
+
+.resume-button{
+
+    display:inline-block;
+
+    margin-top:30px;
+
+    padding:15px 30px;
+
+    background:#2563eb;
+
+    color:#ffffff;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+}
+
+.resume-button:hover{
+
+    background:#1d4ed8;
+
+    transform:translateY(-5px);
+
+}
+
+/*=========================================
+  FOOTER
+=========================================*/
+
+footer{
+
+    margin-top:60px;
+
+    background:#1e293b;
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px;
+
+}
+
+footer p{
+
+    font-size:15px;
+
+    color:#cbd5e1;
+
+}
+
+/*=========================================
+  SCROLL TO TOP BUTTON
+=========================================*/
+
+#topBtn{
+
+    position:fixed;
+
+    bottom:30px;
+
+    right:30px;
+
+    width:50px;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    display:none;
+
+    transition:.3s;
+
+}
+
+#topBtn:hover{
+
+    background:#1d4ed8;
+
+    transform:scale(1.1);
+
+}
+
+/*=========================================
+  SCROLLBAR
+=========================================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#f1f5f9;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#2563eb;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#1d4ed8;
+
+}
+
+/*=========================================
+  HOVER EFFECTS
+=========================================*/
+
+.project,
+.contact,
+#education li,
+#certifications li{
+
+    transition:.3s ease;
+
+}
+
+.project:hover,
+.contact:hover,
+#education li:hover{
+
+    box-shadow:0 12px 30px rgba(37,99,235,.18);
+
+}
+
+/*=========================================
+  RESPONSIVE DESIGN
+=========================================*/
+
+@media(max-width:992px){
+
+section{
+
+padding:60px 25px;
+
+}
+
+header h1{
+
+font-size:42px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+nav{
+
+flex-wrap:wrap;
+
+gap:12px;
+
+padding:15px;
+
+}
+
+nav a{
+
+font-size:14px;
+
+}
+
+header{
+
+padding:70px 20px;
+
+}
+
+header h1{
+
+font-size:34px;
+
+}
+
+header p{
+
+font-size:18px;
+
+}
+
+h2{
+
+font-size:28px;
+
+}
+
+.skills{
+
+justify-content:center;
+
+}
+
+.resume-button{
+
+display:block;
+
+text-align:center;
+
+width:100%;
+
+}
+
+.contact{
+
+padding:20px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+body{
+
+font-size:15px;
+
+}
+
+header h1{
+
+font-size:28px;
+
+}
+
+header p{
+
+font-size:16px;
+
+}
+
+.project{
+
+padding:18px;
+
+}
+
+.contact{
+
+padding:18px;
+
+}
+
+}
+
+/* Fade Animation */
+
+.hidden{
+
+opacity:0;
+
+transform:translateY(40px);
+
+transition:all .8s ease;
+
+}
+
+.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+/* Active Navigation */
+
+nav a.active span{
+
+background:#2563eb;
+
+color:white;
+
+}
