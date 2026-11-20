@@ -133,9 +133,9 @@ CGPA: 7.67
 
 **Phone:** +91 93458 75359
 
-**GitHub:** https://github.com/Karthirdx/Karthi_18
+**GitHub:** https://github.com/Karthi-Tech-2005
 
-**LinkedIn:** https://www.linkedin.com/in/karthi-keyan-354ba2283
+**LinkedIn:** https://www.linkedin.com/in/karthi-keyan2005
 
 ## 📄 Resume
 
